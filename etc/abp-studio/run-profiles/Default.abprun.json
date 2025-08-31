@@ -1,0 +1,18 @@
+﻿{
+  "applications": {
+    "TodoApp.Web": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44350",
+      "path": "../../../src/TodoApp.Web/TodoApp.Web.csproj",
+      "kubernetesService": ".*-web$",
+      "healthCheckEndpoint": "/health-status",
+      "healthUiEndpoint": "/health-ui",
+      "execution": {
+        "order": 2
+      }
+    }
+  },
+  "containers": {
+    "serviceName": "TodoApp-Containers",
+  }
+}
