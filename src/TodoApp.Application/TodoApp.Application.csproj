@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="KafkaFlow" Version="4.0.1" />
+    <PackageReference Include="KafkaFlow.LogHandler.Console" Version="4.0.1" />
+    <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="KafkaFlow.Serializer.JsonCore" Version="4.0.1" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="9.3.2" />

@@ -17,7 +17,8 @@ namespace TodoApp;
     typeof(AbpIdentityApplicationModule),
     typeof(AbpAccountApplicationModule),
     typeof(AbpTenantManagementApplicationModule),
-    typeof(AbpSettingManagementApplicationModule)
+    typeof(AbpSettingManagementApplicationModule),
+    typeof(KafkaFlowIntegrationModule)
     )]
 public class TodoAppApplicationModule : AbpModule
 {
