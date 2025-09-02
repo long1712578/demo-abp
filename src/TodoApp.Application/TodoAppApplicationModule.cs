@@ -6,6 +6,7 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Modularity;
 using Volo.Abp.TenantManagement;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace TodoApp;
 
@@ -28,5 +29,10 @@ public class TodoAppApplicationModule : AbpModule
         {
             options.AddMaps<TodoAppApplicationModule>();
         });
+
+        // Đăng ký các service cho HttpClient
+        context.Services.AddHttpClient();
+        context.Services.AddTransient<Application.Http.IHttpClientService, Application.Http.HttpClientService>();
+        context.Services.AddTransient<Application.Http.ISevagoApiClient, Application.Http.SevagoApiClient>();
     }
 }

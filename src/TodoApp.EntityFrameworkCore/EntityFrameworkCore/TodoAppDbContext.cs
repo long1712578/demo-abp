@@ -87,5 +87,8 @@ public class TodoAppDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+    // Áp dụng converter cho tất cả DateTime sang UTC
+    builder.ApplyUtcDateTimeConverter();
     }
 }
